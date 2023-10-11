@@ -1,9 +1,14 @@
 import java.io.*;
 import java.text.*;
 import java.util.*;
-//update code style
+
 public class StudentList {
 	public static void main(String[] args) {
+
+		if (args == null || args[0].length() != 1) {
+			System.out.println("Please provide a, r, ?, +, or c argument");
+			return;
+		}
 
 		// Check arguments
 		if (args[0].equals("a")) {
